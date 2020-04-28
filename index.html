@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        input[type=text],
+        input[type=text]:focus{
+            background: rgba(0, 0, 0, 0.2);
+            border: none;
+            color: white;
+        }
+        .todos li{
+            background: #423a6f;
+        }
+        .delete{
+            cursor: pointer;
+        }
+        .filtered{
+            display: none !important;
+        }
+    </style>
+</head>
+<body style="background: #352f5b;">
+    <div class="container text-center text-light">
+        <h2 class="heading display-2 py-4">
+            Todo List
+        </h2>
+        
+        <div class="item-list mx-auto w-50" style="width: 200px;">
+            <form class="search">
+                <input type="text" class="form-control m-auto" name="search" placeholder="search todos">
+            </form>
+
+            <ul class="list-group todos mx-auto my-4 w-70 text-left ">
+                <li class="list-group-item d-flex justify-content-between ">
+                    <span>Go to Gym</span>  
+                    <i class="icon fa fa-trash delete " aria-hidden="true"></i>
+                </li>
+                <li class="list-group-item d-flex justify-content-between">
+                    <span>Go to Gym</span>  
+                    <i class="icon fa fa-trash delete " aria-hidden="true"></i>
+                </li>
+            </ul>
+
+            <form class="add form-group">
+                <div class="text-light py-2" style="font-size: x-large;"> Add a new todo </div>
+                <input type="text" class="form-control" name="t">
+            </form>
+        </div>
+
+    </div>
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
